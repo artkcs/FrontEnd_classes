@@ -1,0 +1,138 @@
+*{
+	box-sizing: border-box;
+}
+.heading {
+	margin-top: 100px;
+	text-align: center;
+	text-shadow: 5px 5px 5px lightblue;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin-bottom: 50px;
+	
+}
+.block-line {
+	text-align: center;
+	margin-top: 10px;
+}
+.main-block {
+	position: relative;
+	background-color: lightblue;
+	display: inline-block;
+	width: 400px;
+	height: 200px;
+	overflow: auto;
+}
+.main-block h3 {
+	text-align: center;
+}
+
+.main-block {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-shadow: 1px 1px 5px lightblue;
+}
+
+.main-block ul li {
+	text-align: justify;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.main-img {
+	display: inline-block;
+}
+.main-img img {
+	height: 200px;
+	width: 400px;
+	object-fit: cover;
+}
+
+.main-block, .main-img, .video {
+	transition: box-shadow 0.2s;
+}
+
+.main-block:hover, .main-img:hover, .video:hover {
+	box-shadow: 5px 10px 50px #6495ED;
+}
+
+.video {
+	display: inline-block;
+}
+
+#form {
+	width: 300px;
+	height: 315px;
+}
+
+#form h3 {
+	margin-top: 50px;
+}
+
+.input {
+	width: 90%;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	height: 40px;
+	font-size: 15px;
+	padding-left: 5px;
+	border: 1px solid #00CED1;
+	border-radius: 3px;
+	transition: 0.2s background-color, 0.2s border;
+}
+
+.input:hover {
+	border: 2px solid #00BFFF;
+	background-color: #00FFFF;
+}
+
+#what-for {
+	width: 92%;
+}
+.submit-btn {
+	display: block;
+	background-color: #663399;
+	color: #ffffff;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin: 20px auto 0 auto;
+	border: none;
+	width: 90%;
+	height: 40px;
+	transition: 0.2s background-color;
+
+}
+
+.submit-btn:hover {
+	background-color: #4682B4;
+	cursor: grab;
+}
+
+@media screen and (max-width: 850px){
+	.main-block {
+		width: 300px;
+		height: 250px;
+		padding-right: 10px;
+	}
+
+	.main-img img{
+		width: 300px;
+		height: 250px;
+	}
+	.video {
+		display: block;
+	}
+
+	#form, .video iframe {
+		width: 600px;
+	}
+}
+@media screen and (max-width: 650px){
+	.main-block, .main-img img, #form {
+		width: 90%;
+		display: block;
+		margin: 10px auto 0 auto;
+	}
+
+	.video {
+		display: block;
+	}
+	.video iframe {
+		width: 90%;
+	}
+}
